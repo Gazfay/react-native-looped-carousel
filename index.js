@@ -407,6 +407,7 @@ export default class Carousel extends Component {
           ref={(c) => { this.scrollView = c; }}
           onScrollBeginDrag={this._onScrollBegin}
           onMomentumScrollEnd={this._onScrollEnd}
+          keyboardShouldPersistTaps="handled"
           onScroll={this._onScroll}
           alwaysBounceHorizontal={false}
           alwaysBounceVertical={false}
